@@ -1,0 +1,19 @@
+@import './constants.css';
+
+.typo-title {
+	color: var(--color-text);
+	font-size: var(--font-size-large);
+	font-weight: var(--font-weight-bold);
+}
+
+.typo-label {
+	color: var(--color-primary);
+	font-size: var(--font-size-small);
+	font-weight: var(--font-weight-normal);
+}
+
+.typo-text {
+	color: var(--color-text);
+	font-size: var(--font-size-normal);
+	font-weight: var(--font-weight-normal);
+}

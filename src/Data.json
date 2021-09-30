@@ -1,0 +1,32 @@
+{
+	"filters": [
+		{
+			"id": 1,
+			"name": "Name",
+			"placeholder": "Employee Name",
+			"type": "text",
+			"options": null
+		},
+		{
+			"id": 2,
+			"name": "Employee ID",
+			"placeholder": "ID",
+			"type": "select",
+			"options": ["ID", "option 1", "option 2", "option 3" ]
+		},
+		{
+			"id": 3,
+			"name": "Department",
+			"placeholder": "Choice",
+			"type": "select",
+			"options": ["Choice", "option 1", "option 2", "option 3" ]
+		},
+		{
+			"id": 4,
+			"name": "More",
+			"placeholder": "Choice",
+			"type": "select",
+			"options": ["Choice", "option 1", "option 2", "option 3" ]
+		}
+	]
+}

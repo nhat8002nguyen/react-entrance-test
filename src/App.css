@@ -1,4 +1,10 @@
 @import '~antd/dist/antd.css';
+@import './styles/home.css';
+@import './styles/employee.css';
+@import './styles/constants.css';
+@import './styles/typography.css';
+@import './styles/atoms.css';
+
 
 .App {
   text-align: center;
@@ -16,25 +22,75 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+	position: fixed;
+	z-index: 1;
+	width: 100%;
+	background-color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.icon {
+	font-size: 40;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App-header-top {
+	display: flex;
+	justify-content: space-between;
+	background-color: #F4F4F4;
 }
+
+.App-header-menu {
+	display: flex;
+	align-items: center;
+	margin-left: 15px;
+	gap: 10px;
+}
+
+.App-header-menu p {
+	position: relative;
+	top: 6px;
+	font-weight: 700;
+	color: var(--color-text);
+}
+
+.App-header-user {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	margin-right: 15px;
+}
+
+.App-header-user p {
+	position: relative;
+	top: 6px;
+	font-size: var(--font-size-normal);
+	font-weight: var(--font-weight-bold);
+}
+
+.App-header-bottom {
+	background-color: var(--color-primary);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.Bread-crumb {
+	font-size: var(--font-size-large);
+	color: #fff;
+	margin-left: 45px;
+	position: relative;
+	top: 6px;
+	display: flex;
+	font-weight: var(--font-weight-normal);
+	gap: 10px;
+}
+
+.Bread-crumb-first {
+	font-weight: var(--font-weight-bold);
+}
+
+.App-header-bottom-icons {
+	margin-right: 20px;
+	display: flex;
+	gap: 20px;
+}
+

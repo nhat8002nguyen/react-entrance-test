@@ -1,0 +1,15 @@
+.color-primary {
+	color: #913062;
+}
+
+:root {
+	--color-primary: #913062;
+	--color-select: #E5CDD9;
+	--color-text: #444444;
+	--font-size-normal: 12px;
+	--font-size-small: 10px;
+	--font-size-large: 16px;
+	--font-weight-bold: 700;
+	--font-weight-normal: 600;
+}
+

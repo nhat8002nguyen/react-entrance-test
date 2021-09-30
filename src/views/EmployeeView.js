@@ -4,7 +4,7 @@ import { Layout } from 'antd';
 
 
 
-export default function Employee(props) {
+export default function EmployeeView(props) {
 	const { Header, Footer, Sider, Content } = Layout;
 
 	return (

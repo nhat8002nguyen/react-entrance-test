@@ -9,16 +9,26 @@ import {
   Route,
   Link
 } from "react-router-dom";
+import { Layout } from 'antd';
+import AppHeader from './views/components/AppHeader';
+import AppFooter from './views/components/AppFooter';
+
+const { Header, Footer } = Layout;
 
 function App() {
 
 
+
   return (
 		<Router>
-			<Route path="/" exact><Main /></Route>
-			<Route path="/employees/:id">
-				<Employee />
-			</Route>
+			<Layout>
+				<AppHeader /> 
+				<Route path="/" exact><Main /></Route>
+				<Route path="/employees/:id">
+					<Employee />
+				</Route>
+				<AppFooter />
+			</Layout>
 		</Router>
   );
 }
