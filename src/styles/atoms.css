@@ -1,11 +1,12 @@
 .employee-input {
 	width: 100%;
+	margin-top: 10px;
 }
 
 .employee-input p {
 	position: relative;
-	top: 15px;
-	left: 4px;
+	left: 3px;
+	margin: 0px;
 }
 
 .input {

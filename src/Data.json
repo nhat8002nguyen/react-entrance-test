@@ -1,32 +1,128 @@
 {
 	"filters": [
 		{
-			"id": 1,
-			"name": "Name",
-			"placeholder": "Employee Name",
-			"type": "text",
-			"options": null
+			"id": 1, "name": "Name", "placeholder": "Employee Name", "type": "text", "options": null,
+			"default": ""
 		},
 		{
-			"id": 2,
-			"name": "Employee ID",
-			"placeholder": "ID",
-			"type": "select",
-			"options": ["ID", "option 1", "option 2", "option 3" ]
+			"id": 2, "name": "Employee ID", "placeholder": "ID", "type": "text",
+			"options": null,
+			"default": "" 
 		},
 		{
-			"id": 3,
-			"name": "Department",
-			"placeholder": "Choice",
-			"type": "select",
-			"options": ["Choice", "option 1", "option 2", "option 3" ]
+			"id": 3, "name": "Department", "placeholder": "Choice", "type": "select",
+			"options": ["Choice", "Second Office", "Head Office", "Operations" ],
+			"default": ""
 		},
 		{
-			"id": 4,
-			"name": "More",
-			"placeholder": "Choice",
-			"type": "select",
-			"options": ["Choice", "option 1", "option 2", "option 3" ]
+			"id": 4, "name": "More", "placeholder": "Choice", "type": "select",
+			"options": ["Choice", "Operation", "Assistant", "Manager" ],
+			"default": ""
 		}
-	]
+	],
+
+	"employeesTable": {
+		"employeeItemPropotion": [
+			{ "name": "Image", "flex": 1 },
+			{ "name": "Name", "flex": 2 },
+			{ "name": "Employee ID", "flex": 1.5 },
+			{ "name": "Position", "flex": 3 },
+			{ "name": "Department", "flex": 2 },
+			{ "name": "Email", "flex": 3 }
+		],
+		"employeeList": [
+			{
+				"employeeId": 123,
+				"image": "https://genk.mediacdn.vn/thumb_w/690/2019/12/12/11-1575883882-width650height762-1576168363318789958220.jpg",
+				"name": "Rafael Nadal",
+				"position": "Chief Finacial developer",
+				"department": "Second Office",
+				"email": "contanza@penske.com"
+			},
+			{
+				"employeeId": 124,
+				"image": "https://genk.mediacdn.vn/thumb_w/690/2019/12/12/11-1575883882-width650height762-1576168363318789958220.jpg",
+				"name": "Jenny Seinfield",
+				"position": "Operations Manager",
+				"department": "Head Office",
+				"email": "contanza@penske.com"
+			},
+			{
+				"employeeId": 125,
+				"image": "https://genk.mediacdn.vn/thumb_w/690/2019/12/12/11-1575883882-width650height762-1576168363318789958220.jpg",
+				"name": "Roberto Carlos",
+				"position": "Operations Trainee",
+				"department": "Operations",
+				"email": "contanzaqwr@penske.com"
+			},
+			{
+				"employeeId": 126,
+				"image": "https://genk.mediacdn.vn/thumb_w/690/2019/12/12/11-1575883882-width650height762-1576168363318789958220.jpg",
+				"name": "Jenny Seinfield",
+				"position": "Chief Finacial Officer",
+				"department": "Operations",
+				"email": "contanza@penske.com"
+			},
+			{
+				"employeeId": 127,
+				"image": "https://genk.mediacdn.vn/thumb_w/690/2019/12/12/11-1575883882-width650height762-1576168363318789958220.jpg",
+				"name": "Mario Baloteli",
+				"position": "Chief Finacial Officer",
+				"department": "Second Office",
+				"email": "contanza@penske.com"
+			},
+			{
+				"employeeId": 128,
+				"image": "https://genk.mediacdn.vn/thumb_w/690/2019/12/12/11-1575883882-width650height762-1576168363318789958220.jpg",
+				"name": "Lingard",
+				"position": "Assistant Operations Manager",
+				"department": "Operations",
+				"email": "contanza@penske.com"
+			},
+			{
+				"employeeId": 129,
+				"image": "https://genk.mediacdn.vn/thumb_w/690/2019/12/12/11-1575883882-width650height762-1576168363318789958220.jpg",
+				"name": "Messi",
+				"position": "Chief Finacial Officer",
+				"department": "Head Office",
+				"email": "contanza@penske.com"
+			},
+			{
+				"employeeId": 130,
+				"image": "https://genk.mediacdn.vn/thumb_w/690/2019/12/12/11-1575883882-width650height762-1576168363318789958220.jpg",
+				"name": "Zalatan Arahimovic",
+				"position": "Operations Manager",
+				"department": "Head Office",
+				"email": "contanza@penske.com"
+			},
+			{
+				"employeeId": 131,
+				"image": "https://genk.mediacdn.vn/thumb_w/690/2019/12/12/11-1575883882-width650height762-1576168363318789958220.jpg",
+				"name": "Romelu Lukaku",
+				"position": "Operations Trainee",
+				"department": "Head Office",
+				"email": "contanza@penske.com"
+			},
+			{
+				"employeeId": 132,
+				"image": "https://genk.mediacdn.vn/thumb_w/690/2019/12/12/11-1575883882-width650height762-1576168363318789958220.jpg",
+				"name": "Ronaldo Dasilva",
+				"position": "Chief Finacial Officer",
+				"department": "Operations",
+				"email": "contanza@penske.com"
+			},
+			{
+				"employeeId": 133,
+				"image": "https://genk.mediacdn.vn/thumb_w/690/2019/12/12/11-1575883882-width650height762-1576168363318789958220.jpg",
+				"name": "Peter Pan",
+				"position": "Chief Finacial Officer",
+				"department": "Second Office",
+				"email": "contanza@penske.com"
+			}
+		]
+	}
+
+
+
+
 }
