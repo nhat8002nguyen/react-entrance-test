@@ -1,9 +1,11 @@
 import React from "react";
 import { useSelector } from "react-redux";
 import { CheckCircleFilled } from "@ant-design/icons";
+import { useHistory } from "react-router";
 
 
 export default function EmployeeItem(props) {
+	const history = useHistory();
 	const { employeeItemPropotion: flexes, showSelection } = useSelector(state => state.homeState)
 	const {image, name, employeeId, position, department, email} = props;
 
@@ -13,8 +15,12 @@ export default function EmployeeItem(props) {
 		props.onItemSelect(props.employeeId);
 	}
 
+	const handleDoubleClickItem = () => {
+		history.push(`/employees/${props.employeeId}`);
+	}
+
 	return (
-		<div className="employee-item etable-header" onClick={handleClickItem}
+		<div className="employee-item etable-header" onClick={handleClickItem} onDoubleClick={handleDoubleClickItem}
 			style={props.employeeId === props.focusId ? {backgroundColor: "#E5CDD9"} : null}	
 		>
 			<div style={{width: "30px", flex: flexes[0].flex}}>
@@ -38,8 +44,8 @@ export default function EmployeeItem(props) {
 			{showSelection &&<div style={{flex: 0.5, minWidth: 30}}>
 				<CheckCircleFilled 
 					style={
-						{fontSize: 30, cursor: "pointer"},
-						props.selectedEmployees?.find(item => item.id === props.employeeId)?.isSelected ? {color: "#c74287"} : null} 
+						props.selectedEmployees?.find(item => item.id === props.employeeId)?.isSelected 
+						? {color: "#c74287", fontSize: 25} : {fontSize: 25}} 
 					onClick={handleSelectItem}/>
 			</div>}
 			

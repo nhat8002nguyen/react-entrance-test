@@ -25,6 +25,13 @@ export default function EmployeeTable() {
 		return isMounted = false;
 	}, [employeeList, filters])
 
+	// reset selected employees when list change
+	useEffect(() => {
+		let isMounted = true;
+		isMounted && updateSelectedEmployees(employeeList.map(emp => ({id: emp.employeeId, isSelected: false})));
+		return isMounted = false;
+	}, [employeeList])
+
 	useEffect(() => {
 		let isMounted = true;
 		// reset selections when toggle select columns 
