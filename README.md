@@ -15,6 +15,9 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
+# Home UI
+<img src="https://user-images.githubusercontent.com/58263449/135704199-d81d1560-4fa9-45aa-86c9-a66b3eae8340.png"  width="500"  />
+
 # Demos
 
 ## 1. list the employee list, filters, select a bunch employees, delete
