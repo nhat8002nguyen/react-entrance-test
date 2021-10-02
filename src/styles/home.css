@@ -15,14 +15,17 @@
 	border-right: 2px solid rgb(202, 202, 202);
 }
 
-.filter-container {
-}
-
-
-
 .Employee-table {
 	flex: 6;
 	background-color: #fff;
+}
+
+.big-add-icon {
+	position: absolute;
+	bottom: 130px;
+	right: 90px;
+	color: #913062;
+	cursor: pointer;
 }
 
 .etable-header {
@@ -40,8 +43,8 @@
 
 .employee-list {
 	overflow-y: auto;
-	height: 70vh;
-	padding-bottom: 20px;
+	height: 80vh;
+	padding-bottom: 30px;
 }
 
 .employee-item {

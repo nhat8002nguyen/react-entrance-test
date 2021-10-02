@@ -23,8 +23,8 @@ export default function EmployeeItem(props) {
 		<div className="employee-item etable-header" onClick={handleClickItem} onDoubleClick={handleDoubleClickItem}
 			style={props.employeeId === props.focusId ? {backgroundColor: "#E5CDD9"} : null}	
 		>
-			<div style={{width: "30px", flex: flexes[0].flex}}>
-				<img src={image} width={30} style={{borderRadius: "50%", flex: flexes[0].flex}}></img>
+			<div style={{flex: flexes[0].flex}}>
+				<img src={image} width={40} height={40} style={{borderRadius: "50%", flex: flexes[0].flex}}></img>
 			</div>
 			<div style={{flex: flexes[1].flex, minWidth: flexes[1].flex*60}}>
 				<p className="typo-text" style={{fontWeight: "bold", }}>{name}</p>

@@ -1,25 +1,19 @@
 import React from "react";
 
-import { Layout } from 'antd';
-
-
+import {Metrics, Credentials, Details, Inspections} from "./components/employee";
 
 export default function EmployeeView(props) {
-	const { Header, Footer, Sider, Content } = Layout;
 
 	return (
-		<div>
-			<Layout>
-				<Header>Header</Header>
-				<Layout>
-					<Sider>Sider</Sider>
-					<Layout>
-						<Header>Header 1</Header>
-						<Content>Content 1</Content>
-					</Layout>
-				</Layout>
-				<Footer>Footer</Footer>
-			</Layout>
+		<div className="employee-view">
+			<div className="employee-view-top">
+				<Metrics />
+				<div className="employee-view-right">
+					<Details />
+					<Credentials />
+				</div>
+			</div>
+			<Inspections />
 		</div>
 	)
 }

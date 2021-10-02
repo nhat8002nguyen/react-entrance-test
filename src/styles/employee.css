@@ -1,0 +1,88 @@
+@import '../styles/constants.css';
+
+.employee-view {
+	margin-top: 100px;
+	padding: 10px 60px 20px 60px;
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+}
+
+.employee-view-top {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	align-items: center;
+	gap: 20px;
+}
+
+.section-container {
+	background-color: white;
+	padding: 10px;
+	min-width: 	40%;
+}
+
+.section-row {
+	display: flex;
+	gap: 20px;
+}
+
+/* employee metrics */
+
+.metrics {
+	min-height: 300px;
+	min-width: 40%;
+}
+
+.metrics-middle {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.metrics-bottom {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.metrics-field {
+
+}
+
+.metrics-field p {
+	margin: 0px;
+}
+
+
+
+.employee-view-right {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.details-container {
+}
+
+/* credentials */
+.credentials-container {
+}
+
+.inspections-container {
+	
+}
+
+
+/* mobile */
+@media only screen and (max-width: 600px) {
+	.employee-view {
+		padding: 10px 20px 20px 20px;
+	}
+	.employee-view-top {
+		flex-direction: column;
+	}
+	.metrics {
+		width: 100%;
+	}
+}
