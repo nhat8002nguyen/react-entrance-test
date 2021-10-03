@@ -6,13 +6,23 @@ import { Menu, Dropdown, Popconfirm, Button  } from "antd";
 import { useDispatch, useSelector } from "react-redux";
 import { deleteSelectedEmps, fetchFilterData, toggleFilters, toggleSelect } from "../../redux/actions/homeActions";
 import { CSVLink } from "react-csv";
+import { useHistory } from "react-router";
 
 
 
 export default function AppHeader() {
 	const dispatch = useDispatch();
+	const history = useHistory();
 	const { employeeList, showSelection, selectedEmps, employeeItemPropotion } = useSelector(state => state.homeState)
 	const [csvReport, setCSVReport] = useState({ data: [], headers: [], filename: ""});
+	const { employeeDetail } = useSelector(state => state.employeeState);
+	const [curEmployee, setCurEmployee] = useState("");
+
+	// change header name when navigate to an employee details
+	useEffect(() => {
+		const employeeName = employeeDetail?.metrics?.name;
+		employeeName && setCurEmployee(employeeName);
+	},[employeeDetail])
 
 	const handleOnFilterClick = () => {
 		dispatch(toggleFilters());
@@ -26,6 +36,7 @@ export default function AppHeader() {
 	const handleDeleteClick = () => {
 		dispatch(deleteSelectedEmps());
 	}
+
 	useEffect(() => {
 		let mounted = true;
 
@@ -53,7 +64,6 @@ export default function AppHeader() {
 
 	}, [employeeList, selectedEmps, employeeItemPropotion])
 	
-
 	const menu = (
 		<Menu>
 			<Menu.Item key="select-columns" className="typo-text" onClick={handleSelectClick}>
@@ -97,7 +107,11 @@ export default function AppHeader() {
 			<div className="App-header-bottom">
 				<div className="Bread-crumb">
 					<p className="Bread-crumb-first" >Employees</p>
-					<p>{employeeList?.length > 0 ? `${employeeList.length} Employees` : "Not found employees"}</p>
+					<p>{history.location.pathname === "/" 
+						? employeeList?.length > 0 ? `${employeeList.length} Employees` : "Not found employees" 
+						: curEmployee.length > 0 
+							? `> ${curEmployee}`
+							: employeeList?.length > 0 ? `${employeeList.length} Employees` : "Not found employees"}</p>
 				</div>
 				<div className="App-header-bottom-icons">
 					<FilterFilled style={{fontSize: 20, color: "white", cursor: "pointer"}} onClick={handleOnFilterClick}/>

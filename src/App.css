@@ -1,6 +1,6 @@
 @import '~antd/dist/antd.css';
 @import './styles/home.css';
-@import './styles/employee.css';
+@import './styles/employee/employee.css';
 @import './styles/constants.css';
 @import './styles/typography.css';
 @import './styles/atoms.css';

@@ -1,0 +1,43 @@
+@import "../constants.css";
+
+.inspections {
+	padding: 10px 20px 20px 20px; 
+}
+
+.inspections-buttons {
+	display: flex;
+	gap: 20px;
+}
+
+.inspec-table-id {
+	display: block;
+}
+
+#inspec-table-id th {
+	display: inline-block;
+	text-align: left;
+	width: 200px;
+}
+
+#table-header {
+	border-bottom: 2px solid grey;
+}
+
+#table-header p {
+	margin: 0;
+}
+
+#inspec-table-id th {
+	margin-left: 5px;
+}
+
+#inspec-table-id td {
+	display: inline-block;
+	text-align: left;
+	width: 200px;
+	margin-left: 5px;
+}
+
+.pink-background {
+	background-color: var(--color-select);
+}

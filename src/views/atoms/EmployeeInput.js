@@ -1,23 +1,27 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 
 export default function EmployeeInput(props) {
-	const [input, setInput] = useState("");
+	const { id, name, defaultValue, type, placeholder, options, onInputChange } = props;
 
 	const handleChangeInput = (e) => {
-		setInput(e.target.value);
-		props.onInputChange(props.id, e.target.value);
+		typeof onInputChange === "function" && onInputChange(id, e.target.value);
 	}
 
 	return (
 		<div className="employee-input">
-			<p className="typo-label">{props.name}</p>
-			{props.type === "select" 
-			? <select className="input typo-text" placeholder={props.placeholder} value={input} onChange={handleChangeInput}>
-				{props.options?.map((option, index) => <option key={index}>{option}</option>)}
+			<p className="typo-label">{name}</p>
+			{type === "select" 
+			? <select className="input typo-text" placeholder={placeholder} 
+					onChange={handleChangeInput} 
+				>
+				{options?.map((option, index) => 
+					<option selected={defaultValue === option} key={index}>{option}</option>)
+				}
 			</select>
-			: <input type="text" placeholder={props.placeholder} className="input typo-text" value={input} 
-					onChange={handleChangeInput}>
+			: <input type={type === "password" ? "password" : "text"} 
+					placeholder={placeholder} className="input typo-text" defaultValue={defaultValue} 
+					onChange={handleChangeInput} >
 				</input>}
 		</div>
 	)

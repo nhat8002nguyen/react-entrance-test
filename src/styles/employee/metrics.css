@@ -1,0 +1,62 @@
+/* employee metrics */
+
+.metrics {
+	min-height: 400px;
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 50px;
+}
+
+.metrics-middle {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	gap: 50px;
+}
+
+.metrics-add-image {
+	width: 30%;
+}
+
+.metrics-image {
+	border-radius: 50%;
+	border: 6px solid grey;
+	width: 102px;
+	height: 102px;
+}
+
+.metrics-image img {
+	border-radius: 50%;
+	border: 3px solid white;
+	width: 90px;
+	height: 90px;
+	object-fit: cover;
+}
+
+.metrics-bottom {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding-right: 30px;
+}
+
+.metrics-field {
+
+}
+
+.metrics-field p {
+	margin: 0px;
+}
+
+@media only screen and (max-width: 900px) {
+	.metrics {
+		width: 100%;
+		gap: 10px;
+	}
+	.metrics-middle {
+		flex-direction: column;
+		gap: 0;
+	}
+}

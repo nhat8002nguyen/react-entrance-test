@@ -11,15 +11,17 @@
 		},
 		{
 			"id": 3, "name": "Department", "placeholder": "Choice", "type": "select",
-			"options": ["Choice", "Second Office", "Head Office", "Operations" ],
+			"options": ["Choice", "Second Office", "Head Office", "Operations", "Engineering" ],
 			"default": ""
 		},
 		{
 			"id": 4, "name": "More", "placeholder": "Choice", "type": "select",
-			"options": ["Choice", "Operation", "Assistant", "Manager" ],
+			"options": ["Choice", "Manager - Operations", "Assistant", "Manager", "CTO", "CEO" ],
 			"default": ""
 		}
 	],
+
+
 
 	"employeesTable": {
 		"employeeItemPropotion": [
@@ -108,7 +110,7 @@
 				"name": "Ronaldo Dasilva",
 				"employeeId": 132,
 				"position": "Chief Finacial Officer",
-				"department": "Operations",
+				"department": "Engineering",
 				"email": "contanza@penske.com"
 			},
 			{
@@ -116,13 +118,586 @@
 				"name": "Peter Pan",
 				"employeeId": 133,
 				"position": "Chief Finacial Officer",
-				"department": "Second Office",
+				"department": "Engineering",
 				"email": "contanza@penske.com"
 			}
 		]
-	}
+	},
 
 
-
+	"employeeDetails": [
+		{
+			"id": 123,
+			"metrics": {
+				"name": "Rafael Nadal",
+				"image": "https://p.bigstockphoto.com/GeFvQkBbSLaMdpKXF1Zv_bigstock-Aerial-View-Of-Blue-Lakes-And--227291596.jpg",
+				"inspectionsCompleted": [
+					{"month": "Jan", "value": 12},
+					{"month": "Feb", "value": 15},
+					{"month": "Mar", "value": 0},
+					{"month": "Apr", "value": 11},
+					{"month": "May", "value": 8},
+					{"month": "Jun", "value": 6}
+				],
+				"totalInspections": 230,
+				"openIssues": 4,
+				"lastLogin": "24/12/2017",
+				"sites": 4
+			},
+			"details": {
+				"firstName": "Rafael",
+				"lastName": "Nadal",
+				"email": "Johnsmith@Chekrite.com",
+				"department": "Operations",
+				"phone": "0461002124",
+				"position": "Manager - Operations"
+			},
+			"credentials": {
+				"username": "Johnsmith@Chekrite.com",
+				"password": "johnsmith123",
+				"role": "Demo User",
+				"siteAccess": "Four Sites",
+				"employeeId": 123,
+				"pin": 1234,
+				"roleOptions": ["Demo User", "Excute Admin"],
+				"siteAccessOptions": ["One Site", "Two Sites", "Three Sites", 
+					"Four Sites", "Five Sites", "Six Sites", "Seven Sites"]
+			},
+			"inspections": [
+				{"id": 1, "hashtag": "PN322", "checkList": "Control Demo V2", "date": "19 Dec 2017 11:52am", "duration": "23s" },
+				{"id": 2, "hashtag": "PN312", "checkList": "Control Demo V2", "date": "19 Dec 2017 11:52am", "duration": "1m 20s" },
+				{"id": 3, "hashtag": "PN312", "checkList": "Control Demo V2", "date": "19 Dec 2017 11:52am", "duration": "1m 20s" },
+				{"id": 4, "hashtag": "PN322", "checkList": "Control Demo V2", "date": "19 Dec 2017 11:52am", "duration": "23s" },
+				{"id": 5, "hashtag": "PN322", "checkList": "Control Demo V2", "date": "19 Dec 2017 11:52am", "duration": "23s" },
+				{"id": 6, "hashtag": "PN312", "checkList": "Control Demo V2", "date": "19 Dec 2017 11:52am", "duration": "1m 20s" },
+				{"id": 7, "hashtag": "PN312", "checkList": "Control Demo V2", "date": "19 Dec 2017 11:52am", "duration": "1m 20s" },
+				{"id": 8, "hashtag": "PN312", "checkList": "Control Demo V2", "date": "19 Dec 2017 11:52am", "duration": "1m 20s" },
+				{"id": 9, "hashtag": "PN312", "checkList": "Control Demo V2", "date": "19 Dec 2017 11:52am", "duration": "1m 20s" },
+				{"id": 10, "hashtag": "PN312", "checkList": "Control Demo V2", "date": "19 Dec 2017 11:52am", "duration": "1m 20s" },
+				{"id": 11, "hashtag": "PN312", "checkList": "Control Demo V2", "date": "19 Dec 2017 11:52am", "duration": "1m 20s" },
+				{"id": 12, "hashtag": "PN312", "checkList": "Control Demo V2", "date": "19 Dec 2017 11:52am", "duration": "1m 20s" }
+			]
+		},
+		{
+			"id": 124,
+			"metrics": {
+				"name": "Jenny Seinfield",
+				"image": "https://img.freepik.com/free-icon/important-person_318-10744.jpg?size=338&ext=jpg",
+				"inspectionsCompleted": [
+					{"month": "Jan", "value": 12},
+					{"month": "Feb", "value": 15},
+					{"month": "Mar", "value": 3},
+					{"month": "Apr", "value": 11},
+					{"month": "May", "value": 8},
+					{"month": "Jun", "value": 8}
+				],
+				"totalInspections": 230,
+				"openIssues": 4,
+				"lastLogin": "24/12/2017",
+				"sites": 4
+			},
+			"details": {
+				"firstName": "Jenny",
+				"lastName": "Seinfield",
+				"email": "Johnsmith@Chekrite.com",
+				"department": "Head Office",
+				"phone": "0461002124",
+				"position": "CEO"
+			},
+			"credentials": {
+				"username": "Johnsmith@Chekrite.com",
+				"password": "johnsmith123",
+				"role": "Demo User",
+				"siteAccess": "Five Sites",
+				"employeeId": 124,
+				"pin": 1234,
+				"roleOptions": ["Demo User", "Excute Admin"],
+				"siteAccessOptions": ["One Site", "Two Sites", "Three Sites", 
+					"Four Sites", "Five Sites", "Six Sites", "Seven Sites"]
+			},
+			"inspections": [
+				{ "hashtag": "PN322", "checkList": "Control Demo V2", "date": "19 Dec 2017 11:52am", "duration": "23s" },
+				{ "hashtag": "PN312", "checkList": "Control Demo V2", "date": "19 Dec 2017 11:52am", "duration": "1m 20s" },
+				{ "hashtag": "PN312", "checkList": "Control Demo V2", "date": "19 Dec 2017 11:52am", "duration": "1m 20s" },
+				{ "hashtag": "PN322", "checkList": "Control Demo V2", "date": "19 Dec 2017 11:52am", "duration": "23s" },
+				{ "hashtag": "PN322", "checkList": "Control Demo V2", "date": "19 Dec 2017 11:52am", "duration": "23s" },
+				{ "hashtag": "PN312", "checkList": "Control Demo V2", "date": "19 Dec 2017 11:52am", "duration": "1m 20s" },
+				{ "hashtag": "PN312", "checkList": "Control Demo V2", "date": "19 Dec 2017 11:52am", "duration": "1m 20s" },
+				{ "hashtag": "PN312", "checkList": "Control Demo V2", "date": "19 Dec 2017 11:52am", "duration": "1m 20s" },
+				{ "hashtag": "PN312", "checkList": "Control Demo V2", "date": "19 Dec 2017 11:52am", "duration": "1m 20s" },
+				{ "hashtag": "PN312", "checkList": "Control Demo V2", "date": "19 Dec 2017 11:52am", "duration": "1m 20s" },
+				{ "hashtag": "PN312", "checkList": "Control Demo V2", "date": "19 Dec 2017 11:52am", "duration": "1m 20s" },
+				{ "hashtag": "PN312", "checkList": "Control Demo V2", "date": "19 Dec 2017 11:52am", "duration": "1m 20s" }
+			]
+		},
+		{
+			"id": 125,
+			"metrics": {
+				"name": "Roberto Carlos",
+				"image": "https://img.freepik.com/free-icon/important-person_318-10744.jpg?size=338&ext=jpg",
+				"inspectionsCompleted": [
+					{"month": "Jan", "value": 12},
+					{"month": "Feb", "value": 15},
+					{"month": "Mar", "value": 0},
+					{"month": "Apr", "value": 11},
+					{"month": "May", "value": 8},
+					{"month": "Jun", "value": 6}
+				],
+				"totalInspections": 230,
+				"openIssues": 4,
+				"lastLogin": "24/12/2017",
+				"sites": 4
+			},
+			"details": {
+				"firstName": "Roberto",
+				"lastName": "Carlos",
+				"email": "Johnsmith@Chekrite.com",
+				"department": "Head Office",
+				"phone": "0461002124",
+				"position": "CTO"
+			},
+			"credentials": {
+				"username": "Johnsmith@Chekrite.com",
+				"password": "johnsmith123",
+				"role": "Demo User",
+				"siteAccess": "Three Sites",
+				"employeeId": 125,
+				"pin": 1234,
+				"roleOptions": ["Demo User", "Excute Admin"],
+				"siteAccessOptions": ["One Site", "Two Sites", "Three Sites", 
+					"Four Sites", "Five Sites", "Six Sites", "Seven Sites"]
+			},
+			"inspections": [
+				{ "hashtag": "PN322", "checkList": "Control Demo V2", "date": "19 Dec 2017 11:52am", "duration": "23s" },
+				{ "hashtag": "PN312", "checkList": "Control Demo V2", "date": "19 Dec 2017 11:52am", "duration": "1m 20s" },
+				{ "hashtag": "PN312", "checkList": "Control Demo V2", "date": "19 Dec 2017 11:52am", "duration": "1m 20s" },
+				{ "hashtag": "PN322", "checkList": "Control Demo V2", "date": "19 Dec 2017 11:52am", "duration": "23s" },
+				{ "hashtag": "PN322", "checkList": "Control Demo V2", "date": "19 Dec 2017 11:52am", "duration": "23s" },
+				{ "hashtag": "PN312", "checkList": "Control Demo V2", "date": "19 Dec 2017 11:52am", "duration": "1m 20s" },
+				{ "hashtag": "PN312", "checkList": "Control Demo V2", "date": "19 Dec 2017 11:52am", "duration": "1m 20s" },
+				{ "hashtag": "PN312", "checkList": "Control Demo V2", "date": "19 Dec 2017 11:52am", "duration": "1m 20s" },
+				{ "hashtag": "PN312", "checkList": "Control Demo V2", "date": "19 Dec 2017 11:52am", "duration": "1m 20s" },
+				{ "hashtag": "PN312", "checkList": "Control Demo V2", "date": "19 Dec 2017 11:52am", "duration": "1m 20s" },
+				{ "hashtag": "PN312", "checkList": "Control Demo V2", "date": "19 Dec 2017 11:52am", "duration": "1m 20s" },
+				{ "hashtag": "PN312", "checkList": "Control Demo V2", "date": "19 Dec 2017 11:52am", "duration": "1m 20s" }
+			]
+		},
+		{
+			"id": 126,
+			"metrics": {
+				"name": "Jenny Seinfield",
+				"image": "https://img.freepik.com/free-icon/important-person_318-10744.jpg?size=338&ext=jpg",
+				"inspectionsCompleted": [
+					{"month": "Jan", "value": 12},
+					{"month": "Feb", "value": 15},
+					{"month": "Mar", "value": 0},
+					{"month": "Apr", "value": 11},
+					{"month": "May", "value": 8},
+					{"month": "Jun", "value": 6}
+				],
+				"totalInspections": 230,
+				"openIssues": 4,
+				"lastLogin": "24/12/2017",
+				"sites": 4
+			},
+			"details": {
+				"firstName": "Jenny",
+				"lastName": "Seinfield",
+				"email": "Johnsmith@Chekrite.com",
+				"department": "Second Office",
+				"phone": "0461002124",
+				"position": "Assistant"
+			},
+			"credentials": {
+				"username": "Johnsmith@Chekrite.com",
+				"password": "johnsmith123",
+				"role": "Excute Admin",
+				"siteAccess": "Two Sites",
+				"employeeId": 126,
+				"pin": 1234,
+				"roleOptions": ["Demo User", "Excute Admin"],
+				"siteAccessOptions": ["One Site", "Two Sites", "Three Sites", 
+					"Four Sites", "Five Sites", "Six Sites", "Seven Sites"]
+			},
+			"inspections": [
+				{ "hashtag": "PN322", "checkList": "Control Demo V2", "date": "19 Dec 2017 11:52am", "duration": "23s" },
+				{ "hashtag": "PN312", "checkList": "Control Demo V2", "date": "19 Dec 2017 11:52am", "duration": "1m 20s" },
+				{ "hashtag": "PN312", "checkList": "Control Demo V2", "date": "19 Dec 2017 11:52am", "duration": "1m 20s" },
+				{ "hashtag": "PN322", "checkList": "Control Demo V2", "date": "19 Dec 2017 11:52am", "duration": "23s" },
+				{ "hashtag": "PN322", "checkList": "Control Demo V2", "date": "19 Dec 2017 11:52am", "duration": "23s" },
+				{ "hashtag": "PN312", "checkList": "Control Demo V2", "date": "19 Dec 2017 11:52am", "duration": "1m 20s" },
+				{ "hashtag": "PN312", "checkList": "Control Demo V2", "date": "19 Dec 2017 11:52am", "duration": "1m 20s" },
+				{ "hashtag": "PN312", "checkList": "Control Demo V2", "date": "19 Dec 2017 11:52am", "duration": "1m 20s" },
+				{ "hashtag": "PN312", "checkList": "Control Demo V2", "date": "19 Dec 2017 11:52am", "duration": "1m 20s" },
+				{ "hashtag": "PN312", "checkList": "Control Demo V2", "date": "19 Dec 2017 11:52am", "duration": "1m 20s" },
+				{ "hashtag": "PN312", "checkList": "Control Demo V2", "date": "19 Dec 2017 11:52am", "duration": "1m 20s" },
+				{ "hashtag": "PN312", "checkList": "Control Demo V2", "date": "19 Dec 2017 11:52am", "duration": "1m 20s" }
+			]
+		},
+		{
+			"id": 127,
+			"metrics": {
+				"name": "Mario Baloteli",
+				"image": "https://img.freepik.com/free-icon/important-person_318-10744.jpg?size=338&ext=jpg",
+				"inspectionsCompleted": [
+					{"month": "Jan", "value": 12},
+					{"month": "Feb", "value": 15},
+					{"month": "Mar", "value": 0},
+					{"month": "Apr", "value": 11},
+					{"month": "May", "value": 8},
+					{"month": "Jun", "value": 6}
+				],
+				"totalInspections": 230,
+				"openIssues": 4,
+				"lastLogin": "24/12/2017",
+				"sites": 4
+			},
+			"details": {
+				"firstName": "Mario",
+				"lastName": "Baloteli",
+				"email": "Johnsmith@Chekrite.com",
+				"department": "Head Office",
+				"phone": "0461002124",
+				"position": "Manager"
+			},
+			"credentials": {
+				"username": "Johnsmith@Chekrite.com",
+				"password": "johnsmith123",
+				"role": "Excute Admin",
+				"siteAccess": "Two Sites",
+				"employeeId": 127,
+				"pin": 1234,
+				"roleOptions": ["Demo User", "Excute Admin"],
+				"siteAccessOptions": ["One Site", "Two Sites", "Three Sites", 
+					"Four Sites", "Five Sites", "Six Sites", "Seven Sites"]
+			},
+			"inspections": [
+				{ "hashtag": "PN322", "checkList": "Control Demo V2", "date": "19 Dec 2017 11:52am", "duration": "23s" },
+				{ "hashtag": "PN312", "checkList": "Control Demo V2", "date": "19 Dec 2017 11:52am", "duration": "1m 20s" },
+				{ "hashtag": "PN312", "checkList": "Control Demo V2", "date": "19 Dec 2017 11:52am", "duration": "1m 20s" },
+				{ "hashtag": "PN322", "checkList": "Control Demo V2", "date": "19 Dec 2017 11:52am", "duration": "23s" },
+				{ "hashtag": "PN322", "checkList": "Control Demo V2", "date": "19 Dec 2017 11:52am", "duration": "23s" },
+				{ "hashtag": "PN312", "checkList": "Control Demo V2", "date": "19 Dec 2017 11:52am", "duration": "1m 20s" },
+				{ "hashtag": "PN312", "checkList": "Control Demo V2", "date": "19 Dec 2017 11:52am", "duration": "1m 20s" },
+				{ "hashtag": "PN312", "checkList": "Control Demo V2", "date": "19 Dec 2017 11:52am", "duration": "1m 20s" },
+				{ "hashtag": "PN312", "checkList": "Control Demo V2", "date": "19 Dec 2017 11:52am", "duration": "1m 20s" },
+				{ "hashtag": "PN312", "checkList": "Control Demo V2", "date": "19 Dec 2017 11:52am", "duration": "1m 20s" },
+				{ "hashtag": "PN312", "checkList": "Control Demo V2", "date": "19 Dec 2017 11:52am", "duration": "1m 20s" },
+				{ "hashtag": "PN312", "checkList": "Control Demo V2", "date": "19 Dec 2017 11:52am", "duration": "1m 20s" }
+			]
+		},
+		{
+			"id": 128,
+			"metrics": {
+				"name": "Lingard",
+				"image": "https://img.freepik.com/free-icon/important-person_318-10744.jpg?size=338&ext=jpg",
+				"inspectionsCompleted": [
+					{"month": "Jan", "value": 12},
+					{"month": "Feb", "value": 15},
+					{"month": "Mar", "value": 0},
+					{"month": "Apr", "value": 11},
+					{"month": "May", "value": 8},
+					{"month": "Jun", "value": 6}
+				],
+				"totalInspections": 230,
+				"openIssues": 4,
+				"lastLogin": "24/12/2017",
+				"sites": 4
+			},
+			"details": {
+				"firstName": "Mario",
+				"lastName": "Baloteli",
+				"email": "Johnsmith@Chekrite.com",
+				"department": "Head Office",
+				"phone": "0461002124",
+				"position": "Manager"
+			},
+			"credentials": {
+				"username": "Johnsmith@Chekrite.com",
+				"password": "johnsmith123",
+				"role": "Excute Admin",
+				"siteAccess": "Two Sites",
+				"employeeId": 128,
+				"pin": 1234,
+				"roleOptions": ["Demo User", "Excute Admin"],
+				"siteAccessOptions": ["One Site", "Two Sites", "Three Sites", 
+					"Four Sites", "Five Sites", "Six Sites", "Seven Sites"]
+			},
+			"inspections": [
+				{ "hashtag": "PN322", "checkList": "Control Demo V2", "date": "19 Dec 2017 11:52am", "duration": "23s" },
+				{ "hashtag": "PN312", "checkList": "Control Demo V2", "date": "19 Dec 2017 11:52am", "duration": "1m 20s" },
+				{ "hashtag": "PN312", "checkList": "Control Demo V2", "date": "19 Dec 2017 11:52am", "duration": "1m 20s" },
+				{ "hashtag": "PN322", "checkList": "Control Demo V2", "date": "19 Dec 2017 11:52am", "duration": "23s" },
+				{ "hashtag": "PN322", "checkList": "Control Demo V2", "date": "19 Dec 2017 11:52am", "duration": "23s" },
+				{ "hashtag": "PN312", "checkList": "Control Demo V2", "date": "19 Dec 2017 11:52am", "duration": "1m 20s" },
+				{ "hashtag": "PN312", "checkList": "Control Demo V2", "date": "19 Dec 2017 11:52am", "duration": "1m 20s" },
+				{ "hashtag": "PN312", "checkList": "Control Demo V2", "date": "19 Dec 2017 11:52am", "duration": "1m 20s" },
+				{ "hashtag": "PN312", "checkList": "Control Demo V2", "date": "19 Dec 2017 11:52am", "duration": "1m 20s" },
+				{ "hashtag": "PN312", "checkList": "Control Demo V2", "date": "19 Dec 2017 11:52am", "duration": "1m 20s" },
+				{ "hashtag": "PN312", "checkList": "Control Demo V2", "date": "19 Dec 2017 11:52am", "duration": "1m 20s" },
+				{ "hashtag": "PN312", "checkList": "Control Demo V2", "date": "19 Dec 2017 11:52am", "duration": "1m 20s" }
+			]
+		},
+		{
+			"id": 129,
+			"metrics": {
+				"name": "Messi",
+				"image": "https://img.freepik.com/free-icon/important-person_318-10744.jpg?size=338&ext=jpg",
+				"inspectionsCompleted": [
+					{"month": "Jan", "value": 12},
+					{"month": "Feb", "value": 15},
+					{"month": "Mar", "value": 0},
+					{"month": "Apr", "value": 11},
+					{"month": "May", "value": 8},
+					{"month": "Jun", "value": 6}
+				],
+				"totalInspections": 230,
+				"openIssues": 4,
+				"lastLogin": "24/12/2017",
+				"sites": 4
+			},
+			"details": {
+				"firstName": "Mario",
+				"lastName": "Baloteli",
+				"email": "Johnsmith@Chekrite.com",
+				"department": "Head Office",
+				"phone": "0461002124",
+				"position": "Manager"
+			},
+			"credentials": {
+				"username": "Johnsmith@Chekrite.com",
+				"password": "johnsmith123",
+				"role": "Excute Admin",
+				"siteAccess": "Two Sites",
+				"employeeId": 129,
+				"pin": 1234,
+				"roleOptions": ["Demo User", "Excute Admin"],
+				"siteAccessOptions": ["One Site", "Two Sites", "Three Sites", 
+					"Four Sites", "Five Sites", "Six Sites", "Seven Sites"]
+			},
+			"inspections": [
+				{ "hashtag": "PN322", "checkList": "Control Demo V2", "date": "19 Dec 2017 11:52am", "duration": "23s" },
+				{ "hashtag": "PN312", "checkList": "Control Demo V2", "date": "19 Dec 2017 11:52am", "duration": "1m 20s" },
+				{ "hashtag": "PN312", "checkList": "Control Demo V2", "date": "19 Dec 2017 11:52am", "duration": "1m 20s" },
+				{ "hashtag": "PN322", "checkList": "Control Demo V2", "date": "19 Dec 2017 11:52am", "duration": "23s" },
+				{ "hashtag": "PN322", "checkList": "Control Demo V2", "date": "19 Dec 2017 11:52am", "duration": "23s" },
+				{ "hashtag": "PN312", "checkList": "Control Demo V2", "date": "19 Dec 2017 11:52am", "duration": "1m 20s" },
+				{ "hashtag": "PN312", "checkList": "Control Demo V2", "date": "19 Dec 2017 11:52am", "duration": "1m 20s" },
+				{ "hashtag": "PN312", "checkList": "Control Demo V2", "date": "19 Dec 2017 11:52am", "duration": "1m 20s" },
+				{ "hashtag": "PN312", "checkList": "Control Demo V2", "date": "19 Dec 2017 11:52am", "duration": "1m 20s" },
+				{ "hashtag": "PN312", "checkList": "Control Demo V2", "date": "19 Dec 2017 11:52am", "duration": "1m 20s" },
+				{ "hashtag": "PN312", "checkList": "Control Demo V2", "date": "19 Dec 2017 11:52am", "duration": "1m 20s" },
+				{ "hashtag": "PN312", "checkList": "Control Demo V2", "date": "19 Dec 2017 11:52am", "duration": "1m 20s" }
+			]
+		},
+		{
+			"id": 130,
+			"metrics": {
+				"name": "Zalatan Ibrahimovic",
+				"image": "https://img.freepik.com/free-icon/important-person_318-10744.jpg?size=338&ext=jpg",
+				"inspectionsCompleted": [
+					{"month": "Jan", "value": 12},
+					{"month": "Feb", "value": 15},
+					{"month": "Mar", "value": 0},
+					{"month": "Apr", "value": 11},
+					{"month": "May", "value": 8},
+					{"month": "Jun", "value": 6}
+				],
+				"totalInspections": 230,
+				"openIssues": 4,
+				"lastLogin": "24/12/2017",
+				"sites": 4
+			},
+			"details": {
+				"firstName": "Mario",
+				"lastName": "Baloteli",
+				"email": "Johnsmith@Chekrite.com",
+				"department": "Head Office",
+				"phone": "0461002124",
+				"position": "Manager"
+			},
+			"credentials": {
+				"username": "Johnsmith@Chekrite.com",
+				"password": "johnsmith123",
+				"role": "Excute Admin",
+				"siteAccess": "Two Sites",
+				"employeeId": 130,
+				"pin": 1234,
+				"roleOptions": ["Demo User", "Excute Admin"],
+				"siteAccessOptions": ["One Site", "Two Sites", "Three Sites", 
+					"Four Sites", "Five Sites", "Six Sites", "Seven Sites"]
+			},
+			"inspections": [
+				{ "hashtag": "PN322", "checkList": "Control Demo V2", "date": "19 Dec 2017 11:52am", "duration": "23s" },
+				{ "hashtag": "PN312", "checkList": "Control Demo V2", "date": "19 Dec 2017 11:52am", "duration": "1m 20s" },
+				{ "hashtag": "PN312", "checkList": "Control Demo V2", "date": "19 Dec 2017 11:52am", "duration": "1m 20s" },
+				{ "hashtag": "PN322", "checkList": "Control Demo V2", "date": "19 Dec 2017 11:52am", "duration": "23s" },
+				{ "hashtag": "PN322", "checkList": "Control Demo V2", "date": "19 Dec 2017 11:52am", "duration": "23s" },
+				{ "hashtag": "PN312", "checkList": "Control Demo V2", "date": "19 Dec 2017 11:52am", "duration": "1m 20s" },
+				{ "hashtag": "PN312", "checkList": "Control Demo V2", "date": "19 Dec 2017 11:52am", "duration": "1m 20s" },
+				{ "hashtag": "PN312", "checkList": "Control Demo V2", "date": "19 Dec 2017 11:52am", "duration": "1m 20s" },
+				{ "hashtag": "PN312", "checkList": "Control Demo V2", "date": "19 Dec 2017 11:52am", "duration": "1m 20s" },
+				{ "hashtag": "PN312", "checkList": "Control Demo V2", "date": "19 Dec 2017 11:52am", "duration": "1m 20s" },
+				{ "hashtag": "PN312", "checkList": "Control Demo V2", "date": "19 Dec 2017 11:52am", "duration": "1m 20s" },
+				{ "hashtag": "PN312", "checkList": "Control Demo V2", "date": "19 Dec 2017 11:52am", "duration": "1m 20s" }
+			]
+		},
+		{
+			"id": 131,
+			"metrics": {
+				"name": "Romelu Lukaku",
+				"image": "https://img.freepik.com/free-icon/important-person_318-10744.jpg?size=338&ext=jpg",
+				"inspectionsCompleted": [
+					{"month": "Jan", "value": 12},
+					{"month": "Feb", "value": 15},
+					{"month": "Mar", "value": 0},
+					{"month": "Apr", "value": 11},
+					{"month": "May", "value": 8},
+					{"month": "Jun", "value": 6}
+				],
+				"totalInspections": 230,
+				"openIssues": 4,
+				"lastLogin": "24/12/2017",
+				"sites": 4
+			},
+			"details": {
+				"firstName": "Mario",
+				"lastName": "Baloteli",
+				"email": "Johnsmith@Chekrite.com",
+				"department": "Head Office",
+				"phone": "0461002124",
+				"position": "Manager"
+			},
+			"credentials": {
+				"username": "Johnsmith@Chekrite.com",
+				"password": "johnsmith123",
+				"role": "Excute Admin",
+				"siteAccess": "Two Sites",
+				"employeeId": 131,
+				"pin": 1234,
+				"roleOptions": ["Demo User", "Excute Admin"],
+				"siteAccessOptions": ["One Site", "Two Sites", "Three Sites", 
+					"Four Sites", "Five Sites", "Six Sites", "Seven Sites"]
+			},
+			"inspections": [
+				{ "hashtag": "PN322", "checkList": "Control Demo V2", "date": "19 Dec 2017 11:52am", "duration": "23s" },
+				{ "hashtag": "PN312", "checkList": "Control Demo V2", "date": "19 Dec 2017 11:52am", "duration": "1m 20s" },
+				{ "hashtag": "PN312", "checkList": "Control Demo V2", "date": "19 Dec 2017 11:52am", "duration": "1m 20s" },
+				{ "hashtag": "PN322", "checkList": "Control Demo V2", "date": "19 Dec 2017 11:52am", "duration": "23s" },
+				{ "hashtag": "PN322", "checkList": "Control Demo V2", "date": "19 Dec 2017 11:52am", "duration": "23s" },
+				{ "hashtag": "PN312", "checkList": "Control Demo V2", "date": "19 Dec 2017 11:52am", "duration": "1m 20s" },
+				{ "hashtag": "PN312", "checkList": "Control Demo V2", "date": "19 Dec 2017 11:52am", "duration": "1m 20s" },
+				{ "hashtag": "PN312", "checkList": "Control Demo V2", "date": "19 Dec 2017 11:52am", "duration": "1m 20s" },
+				{ "hashtag": "PN312", "checkList": "Control Demo V2", "date": "19 Dec 2017 11:52am", "duration": "1m 20s" },
+				{ "hashtag": "PN312", "checkList": "Control Demo V2", "date": "19 Dec 2017 11:52am", "duration": "1m 20s" },
+				{ "hashtag": "PN312", "checkList": "Control Demo V2", "date": "19 Dec 2017 11:52am", "duration": "1m 20s" },
+				{ "hashtag": "PN312", "checkList": "Control Demo V2", "date": "19 Dec 2017 11:52am", "duration": "1m 20s" }
+			]
+		},
+		{
+			"id": 132,
+			"metrics": {
+				"name": "Ronado Dasilva",
+				"image": "https://img.freepik.com/free-icon/important-person_318-10744.jpg?size=338&ext=jpg",
+				"inspectionsCompleted": [
+					{"month": "Jan", "value": 12},
+					{"month": "Feb", "value": 15},
+					{"month": "Mar", "value": 0},
+					{"month": "Apr", "value": 11},
+					{"month": "May", "value": 8},
+					{"month": "Jun", "value": 6}
+				],
+				"totalInspections": 230,
+				"openIssues": 4,
+				"lastLogin": "24/12/2017",
+				"sites": 4
+			},
+			"details": {
+				"firstName": "Mario",
+				"lastName": "Baloteli",
+				"email": "Johnsmith@Chekrite.com",
+				"department": "Head Office",
+				"phone": "0461002124",
+				"position": "Manager"
+			},
+			"credentials": {
+				"username": "Johnsmith@Chekrite.com",
+				"password": "johnsmith123",
+				"role": "Excute Admin",
+				"siteAccess": "Two Sites",
+				"employeeId": 132,
+				"pin": 1234,
+				"roleOptions": ["Demo User", "Excute Admin"],
+				"siteAccessOptions": ["One Site", "Two Sites", "Three Sites", 
+					"Four Sites", "Five Sites", "Six Sites", "Seven Sites"]
+			},
+			"inspections": [
+				{ "hashtag": "PN322", "checkList": "Control Demo V2", "date": "19 Dec 2017 11:52am", "duration": "23s" },
+				{ "hashtag": "PN312", "checkList": "Control Demo V2", "date": "19 Dec 2017 11:52am", "duration": "1m 20s" },
+				{ "hashtag": "PN312", "checkList": "Control Demo V2", "date": "19 Dec 2017 11:52am", "duration": "1m 20s" },
+				{ "hashtag": "PN322", "checkList": "Control Demo V2", "date": "19 Dec 2017 11:52am", "duration": "23s" },
+				{ "hashtag": "PN322", "checkList": "Control Demo V2", "date": "19 Dec 2017 11:52am", "duration": "23s" },
+				{ "hashtag": "PN312", "checkList": "Control Demo V2", "date": "19 Dec 2017 11:52am", "duration": "1m 20s" },
+				{ "hashtag": "PN312", "checkList": "Control Demo V2", "date": "19 Dec 2017 11:52am", "duration": "1m 20s" },
+				{ "hashtag": "PN312", "checkList": "Control Demo V2", "date": "19 Dec 2017 11:52am", "duration": "1m 20s" },
+				{ "hashtag": "PN312", "checkList": "Control Demo V2", "date": "19 Dec 2017 11:52am", "duration": "1m 20s" },
+				{ "hashtag": "PN312", "checkList": "Control Demo V2", "date": "19 Dec 2017 11:52am", "duration": "1m 20s" },
+				{ "hashtag": "PN312", "checkList": "Control Demo V2", "date": "19 Dec 2017 11:52am", "duration": "1m 20s" },
+				{ "hashtag": "PN312", "checkList": "Control Demo V2", "date": "19 Dec 2017 11:52am", "duration": "1m 20s" }
+			]
+		},
+		{
+			"id": 133,
+			"metrics": {
+				"name": "Peter Pan",
+				"image": "https://img.freepik.com/free-icon/important-person_318-10744.jpg?size=338&ext=jpg",
+				"inspectionsCompleted": [
+					{"month": "Jan", "value": 12},
+					{"month": "Feb", "value": 15},
+					{"month": "Mar", "value": 0},
+					{"month": "Apr", "value": 11},
+					{"month": "May", "value": 8},
+					{"month": "Jun", "value": 6}
+				],
+				"totalInspections": 230,
+				"openIssues": 4,
+				"lastLogin": "24/12/2017",
+				"sites": 4
+			},
+			"details": {
+				"firstName": "Mario",
+				"lastName": "Baloteli",
+				"email": "Johnsmith@Chekrite.com",
+				"department": "Head Office",
+				"phone": "0461002124",
+				"position": "Manager"
+			},
+			"credentials": {
+				"username": "Johnsmith@Chekrite.com",
+				"password": "johnsmith123",
+				"role": "Excute Admin",
+				"siteAccess": "Two Sites",
+				"employeeId": 133,
+				"pin": 1234,
+				"roleOptions": ["Demo User", "Excute Admin"],
+				"siteAccessOptions": ["One Site", "Two Sites", "Three Sites", 
+					"Four Sites", "Five Sites", "Six Sites", "Seven Sites"]
+			},
+			"inspections": [
+				{ "hashtag": "PN322", "checkList": "Control Demo V2", "date": "19 Dec 2017 11:52am", "duration": "23s" },
+				{ "hashtag": "PN312", "checkList": "Control Demo V2", "date": "19 Dec 2017 11:52am", "duration": "1m 20s" },
+				{ "hashtag": "PN312", "checkList": "Control Demo V2", "date": "19 Dec 2017 11:52am", "duration": "1m 20s" },
+				{ "hashtag": "PN322", "checkList": "Control Demo V2", "date": "19 Dec 2017 11:52am", "duration": "23s" },
+				{ "hashtag": "PN322", "checkList": "Control Demo V2", "date": "19 Dec 2017 11:52am", "duration": "23s" },
+				{ "hashtag": "PN312", "checkList": "Control Demo V2", "date": "19 Dec 2017 11:52am", "duration": "1m 20s" },
+				{ "hashtag": "PN312", "checkList": "Control Demo V2", "date": "19 Dec 2017 11:52am", "duration": "1m 20s" },
+				{ "hashtag": "PN312", "checkList": "Control Demo V2", "date": "19 Dec 2017 11:52am", "duration": "1m 20s" },
+				{ "hashtag": "PN312", "checkList": "Control Demo V2", "date": "19 Dec 2017 11:52am", "duration": "1m 20s" },
+				{ "hashtag": "PN312", "checkList": "Control Demo V2", "date": "19 Dec 2017 11:52am", "duration": "1m 20s" },
+				{ "hashtag": "PN312", "checkList": "Control Demo V2", "date": "19 Dec 2017 11:52am", "duration": "1m 20s" },
+				{ "hashtag": "PN312", "checkList": "Control Demo V2", "date": "19 Dec 2017 11:52am", "duration": "1m 20s" }
+			]
+		}
+	]
 
 }

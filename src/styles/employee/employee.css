@@ -1,0 +1,44 @@
+@import '../constants.css';
+@import './metrics.css';
+@import './detailAndCredential.css';
+@import './inspections.css';
+
+.employee-view {
+	margin-top: 100px;
+	padding: 10px 60px 20px 60px;
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+}
+
+.employee-view-top {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	align-items: center;
+	gap: 50px;
+}
+
+.section-container {
+	background-color: white;
+	padding: 10px 10px 20px 10px;
+	min-width: 	40%;
+	min-height: 150px;
+}
+
+.section-row {
+	display: flex;
+	gap: 20px;
+}
+
+
+/* mobile */
+@media only screen and (max-width: 800px) {
+	.employee-view {
+		padding: 10px 20px 20px 20px;
+	}
+	.employee-view-top {
+		flex-direction: column;
+	}
+	
+}
